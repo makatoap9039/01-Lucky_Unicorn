@@ -20,10 +20,14 @@ def yes_no(question):
 
 
 
+        show_instructions = yes_no("have you played this game before?")
 
-show_instructions = yes_no("have you played this game before?")
+     print("You chose {}".format(show_instructions))
+     print()
+     having_fun = yes_no("are you having fun?")
+        print("you said {} to having fun".format)
 
-print("You chose {}".format(show_instructions))
-print()
-having_fun = yes_no("are you having fun?")
-print("you said {} to having fun".format)
+
+
+
+
