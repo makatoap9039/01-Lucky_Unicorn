@@ -9,9 +9,6 @@ def yes_no(question):
         if response == "y" or response == "yes":
             return "yes"
 
-
-
-
         elif  response == "n" or response == "no":
             return "no"
 
@@ -19,13 +16,13 @@ def yes_no(question):
             print("Please enter yes or no")
 
 
+# Main Routine
+show_instructions = yes_no("have you played this game before?")
 
-        show_instructions = yes_no("have you played this game before?")
-
-     print("You chose {}".format(show_instructions))
-     print()
-     having_fun = yes_no("are you having fun?")
-        print("you said {} to having fun".format)
+print("You chose {}".format(show_instructions))
+print()
+having_fun = yes_no("are you having fun?")
+print("you said {} to having fun".format(having_fun))
 
 
 

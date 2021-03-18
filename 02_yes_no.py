@@ -1,20 +1,31 @@
+#functions
+def yes_no(question):
+    valid = False
+    while not valid:
+        response = input(question).lower()
+
+        if response == "y" or response == "yes":
+            return "yes"
+
+        elif  response == "n" or response == "no":
+            return "no"
+
+        else:
+            print("Please enter yes or no")
+
+
 show_instructions = ""
 while show_instructions.lower()  != "xxx":
 
     # ask users if they have played before
-    show_instructions = input("have you played this before?").lower()
+    show_instructions = yes_no("have you played this before?")
     # if they say yes, output program continues
     if show_instructions == "yes":
         print("program continues")
 
-    elif show_instructions == "no":
+    else:
         print("display instructions an then continue code")
 
-    # if they say y out put program continues
-    elif show_instructions == "y":
-        print ("program continues")
+    print()
 
-    # if they say no, output display instructions
-    else:
-        print("please answer yes or no")
 
